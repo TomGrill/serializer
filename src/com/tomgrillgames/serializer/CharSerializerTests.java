@@ -1,4 +1,4 @@
-package com.tomgrillgames.ncs.serializer;
+package com.tomgrillgames.serializer;
 
 
 import org.junit.jupiter.api.Test;
