@@ -3,12 +3,7 @@ package com.tomgrillgames.ncs.serializer;
 public class IntSerializer {
 
     public static byte[] serialize(int value) {
-        return new byte[]{
-                (byte) (value >> 24),
-                (byte) (value >> 16),
-                (byte) (value >> 8),
-                (byte) (value)
-        };
+        return serialize(new byte[4], value);
     }
 
     public static byte[] serialize(byte[] result, int value) {

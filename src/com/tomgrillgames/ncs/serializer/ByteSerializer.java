@@ -3,7 +3,7 @@ package com.tomgrillgames.ncs.serializer;
 public class ByteSerializer {
 
     public static byte[] serialize(byte value) {
-        return new byte[]{value};
+        return serialize(new byte[1], value);
     }
 
     public static byte[] serialize(byte[] result, byte value) {

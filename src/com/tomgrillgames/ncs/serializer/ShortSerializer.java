@@ -3,10 +3,7 @@ package com.tomgrillgames.ncs.serializer;
 public class ShortSerializer {
 
     public static byte[] serialize(short value) {
-        return new byte[]{
-                (byte) (value >> 8),
-                (byte) (value)
-        };
+        return serialize(new byte[2], value);
     }
 
     public static byte[] serialize(byte[] result, short value) {
